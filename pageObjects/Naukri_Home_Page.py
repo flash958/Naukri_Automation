@@ -3,8 +3,7 @@ from selenium.webdriver.common.by import By
 
 class NaukriHomePage:
 
-    # Locators
-
+    # Locators Data
     btn_login_id="login_Layer"
     email_text_xpath="//input[@class='err-border']"
     password_text_xpath="//input[@placeholder='Enter your password']"
@@ -31,4 +30,5 @@ class NaukriHomePage:
 
     def final_login(self):
         self.driver.find_element(By.XPATH,self.submit_btn).click()
+
 
