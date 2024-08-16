@@ -7,7 +7,6 @@ from selenium.webdriver.chrome.options import Options
 def setup():
     options = webdriver.ChromeOptions()
     options.add_argument("--incognito")
-    options.add_argument("--headless")
     driver = webdriver.Chrome(options=options)
     return driver
 
