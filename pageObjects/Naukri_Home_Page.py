@@ -26,6 +26,7 @@ class NaukriHomePage:
 
     def click_login_btn(self):
         self.driver.find_element(By.ID,self.btn_login_id).click()
+        print("Successfully clicked")
 
 
     def final_login(self):
