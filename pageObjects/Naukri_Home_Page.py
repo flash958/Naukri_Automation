@@ -28,6 +28,11 @@ class NaukriHomePage:
         self.driver.find_element(By.ID,self.btn_login_id).click()
         print("Successfully clicked")
 
+    def hp_screenshot(self):
+        self.driver.save_screenshot("screen.png")
+        print("Screenshot captured")
+
+
 
     def final_login(self):
         self.driver.find_element(By.XPATH,self.submit_btn).click()

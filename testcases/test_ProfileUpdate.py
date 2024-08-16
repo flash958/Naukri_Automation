@@ -19,6 +19,7 @@ class Test_ProfileUpd:
         self.hp=NaukriHomePage(self.driver)
         self.hp.click_login_btn()
         time.sleep(5)
+        self.hp.hp_screenshot()
         #self.driver.find_element(By.XPATH,"//div[@class='drawer-wrapper ']").click()
         self.hp.setemail("saxena958@gmail.com")
         self.hp.setpassword("Sunshine@312")
@@ -36,7 +37,7 @@ class Test_ProfileUpd:
         time.sleep(5)
         self.up.clickSavePProfile()
 
-        
+
 
 
 
